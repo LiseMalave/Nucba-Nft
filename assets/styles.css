@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
+ 
+
 :root{
     --background:#02050e;
     --primary:#1e50ff;
@@ -25,7 +27,7 @@
     list-style-type: none;
     text-decoration: none;
     color: var(--bg-white);
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     /* border: 1px solid red; */
     
 }
@@ -37,6 +39,7 @@ body{
 
 /* header */
 header{
+   
     width: 100%;
     display: flex;
     background-color: var(--nav-bg);
@@ -68,58 +71,65 @@ header{
 
 .navbar-list a{
     color: var(--text-gray);
-    font-size: 16px;
+    font-size: 14px;
     font-family: "poppins";
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-weight: 50;
+    
 }
 
 
 /* hero */
 
 .hero-container{
-    margin-top: 48px;
+   
     max-width: 1200%;
-    height: 60vh;
+    height: 58vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 172px;
+    gap: 95px;
     
     
 }
 
 .hero-info{
-    width: 31%;
-    font-size: 25px;
+    width: 27%;
+    
     
     padding: 1px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 
 }
 
-.hero-info h1{
-    word-spacing: 6px;
-}
+
 
 .hero-info p{
     color: var(--text-gray);
-    width: 100%;
-    font-size: 16px;
+    width: 86%;
+    font-size: 14.5px;
+    font-weight: 100;
+    
+    
     
 }
 
 .hero-info h1{
     font-size: 48.5px;
+    font-weight: 800;
+}
+.hero-btn{
+    width: 150px;
+    text-align: center;
 }
 
 .hero-btn p{
     background-color: var(--primary);
-    padding:  2px 15px;
+    padding:  9px 17px;
+    
     border-radius: 10px;
     font-weight: 550;
     color: var(--text-white);
@@ -127,19 +137,20 @@ header{
 /* card */
 .hero-card{
     /* width: 17rem; */
-    padding: 20px;
+    padding: 19.8px;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     background-color: var(--nav-bg);
-    border-radius: 20px;
-    gap: 10px;
+    border-radius: 13px;
+    gap: 5px;
+    margin-bottom: 10px;
 
     
 }
 
 .hero-card img{
-    width: 250px;
+    width: 258px;
 }
 
 .card-info{
@@ -147,23 +158,30 @@ header{
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
+    align-items: center;
     margin: 12px 0;
+    gap: 9px;
     
 }
 
 .card-info h4{
-    font-weight: 100;
+    font-weight: 800;
+    font-size: 16px;
 }
 
 .card-info p{
     background-color: var(--primary);
-    border-radius: 10px;
-    padding:  0 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    padding:  3px 16px;
+   
 }
 .creator-container{
     display: flex;
-    gap: 15px;
+    gap: 8px;
     
+
 }
 .creator_info{
     display: flex;
@@ -172,10 +190,54 @@ header{
 
 .creator-container img{
     width: 20%;
+    height: 10%;
+
 }
 
-.creator-value h4, .creator-container h4{
+.creator__info__container{
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 800;
+    gap: 20px;
+    justify-content: space-between;
+    
+}
+
+.creator__info__container .creator-value h4, .creator__info__container .creator_info h4{
     font-weight: 100;
-    font-size: 13px;
+    font-size: 12px;
     color: var(--text-gray);
+}
+
+
+/* section info */
+
+.info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.info h2{
+    font-weight: bolder;
+    font-size: 32px;
+
+    
+}
+
+.card__info__container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__info_1, .card__info_2, .card__info_3{
+    background-color: var(--nav-bg);
+    width: 20%;
 }
