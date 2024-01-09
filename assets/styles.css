@@ -325,3 +325,8 @@ header{
     gap: 20px;
     flex-wrap: wrap;
 }
+
+#products{
+    display: flex;
+    width: 100%;
+}
