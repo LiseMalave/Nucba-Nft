@@ -202,6 +202,7 @@ header{
     font-weight: 800;
     gap: 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 
@@ -357,8 +358,8 @@ header{
 
 .products__item{
     background-color: var(--btn-bg);
-    padding: 10px 24px;
-    border-radius: 15px;
+    padding: 10px 18px;
+    border-radius: 10px;
     border: none;
     margin-bottom: 60px;
 }
@@ -377,12 +378,81 @@ header{
     flex-wrap: wrap;
 }
 
-.product__card__item{
-    background-color: var(--nav-bg);
-    width: 400px;
-    height: 450px
+.product{
+    width: 370px;
+    height: 575px;
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;
+
+}
+.product__card__item .hero-card img{
+    width: 325px;
 }
 
-.product__card__item img{
-    width: 85%;
+
+.product .user__img img{
+    width: 50px;
+
+}
+.card__info__name{
+    display: flex;
+    width: 325px;
+    
+    margin-top: 10px;
+   
+    justify-content: space-between;
+}
+.card-info .card__info__name p {
+    background: none;
+   
+    color: var(--text-gray)
+}
+.card__container__product{
+    width: 330px;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.user__img{
+    display: flex;
+
+   width: 50px;
+   
+ 
+}
+.user__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 265px;
+    height: 50px;
+    font-size: 15px;
+   
+}
+.card__info__container_values{
+    width: 330px;
+    
+    display: flex;
+    justify-content: space-between;
+   
+   
+}
+
+.product .fire__img img{
+    width: 20px;
+}
+.creator__time{
+    display: flex;
+    width: 295px;
+    justify-content: space-between;
+  
+}
+
+.creator__time button{
+    padding: 8px 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primary);
 }
