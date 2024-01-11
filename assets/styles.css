@@ -372,10 +372,12 @@ header{
 .products__cards{
     display: flex;
     width: 100%;
+    padding: 50px 250px;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
+   flex-wrap: wrap;
+   
 }
 
 .product{
